@@ -32,3 +32,20 @@ miner = Miner([
   detection.Drupal8Detector(),
 ])
 ```
+
+Sample return value:
+
+```python
+[
+    {
+        'root': '/foo/html',
+        'platform': 'wordpress',
+        'version': '4.8',
+    },
+    {
+        'root': '/bar/html',
+        'platform': 'drupal',
+        'version': '7.59',
+    }
+]
+```
