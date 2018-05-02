@@ -4,6 +4,7 @@ from miner import Miner
 import argparse
 import sys
 import os
+from json import JSONEncoder
 
 
 class Main(object):
@@ -25,8 +26,7 @@ class Main(object):
             detection.Drupal7Detector(),
             detection.Drupal8Detector(),
         ])
-        for result in m.mine(base_path):
-            print(result)
+        print(JSONEncoder().encode(m.mine(base_path)))
 
 
 if __name__ == '__main__':
