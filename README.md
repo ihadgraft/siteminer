@@ -1,4 +1,4 @@
-This is a simple script to crawl a directory, looking for identifiable sites.
+This is a simple script to crawl a directory and report some information on any identified platforms.
 
 Currently supports:
 
@@ -8,7 +8,7 @@ Currently supports:
 
 # Run all known detectors on a path
 
-The following outputs a JSON representation of everything found by the miner.
+The following outputs a JSON representation of everything found by the miner. See sample return value below.
 
 ```sh
 python run.py TARGET_PATH
